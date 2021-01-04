@@ -580,6 +580,11 @@ padding: 0 18px 16px;
   &__inner {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 992px){
+     flex-wrap: wrap;
+justify-content: center;
+    }
   }
 
   &__item {
@@ -589,7 +594,12 @@ padding: 0 18px 16px;
     margin-right: 10px;
     text-align: center;
     width: 100%;
-
+    
+    @media (max-width: 992px){
+      max-width: 135px;
+      margin: 10px 20px;
+      
+    }
     &:last-child {
       margin-right: 0;
     }
