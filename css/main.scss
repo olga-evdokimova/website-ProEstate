@@ -516,10 +516,22 @@ padding: 0 18px 16px;
   &__inner {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    @media (max-width: 992px){
+      justify-content:center;
+    }
+
   }
 
   &__card {
     width: calc(100% / 4 - 23px);
+    max-width: 230px;
+    @media (max-width: 992px){
+      margin: 0 50px 10px;
+      margin-left:calc(10px + (50 - 10) * ((100vw - 320px) / (992 - 320)));
+      margin-right:calc(10px + (50 - 10) * ((100vw - 320px) / (992 - 320)));
+      flex: 1 1 230px;
+    }
   }
 
   &__img {
