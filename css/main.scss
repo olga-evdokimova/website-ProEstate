@@ -623,10 +623,13 @@ justify-content: center;
   appearance: none;
   background: url("../image/contact_bg.jpg") center;
   background-size: cover;
-  height: 614px;
+  max-height: 614px;
   margin-bottom: 86px;
   position: relative;
-
+  @media (max-width: 580px){
+  background: transparent;
+ 
+  }
   &__title {
     display: none;
   }
@@ -645,6 +648,18 @@ justify-content: center;
     top: -29px;
     width: 416px;
     z-index: 5;
+    @media (max-width: 992px){
+     top: 0;
+     width: calc(300px + (416 - 300) * ((100vw - 320px) / (992 - 320)));
+      padding: calc(12px + (34 - 12) * ((100vw - 320px) / (992 - 320)));
+     
+    }
+    @media (max-width: 580px){
+      width: 100%;
+      // left: 50%;
+      // transform: translateX(-50%);
+    }
+
   }
 
   &__form-title {
@@ -674,7 +689,12 @@ justify-content: center;
     margin-bottom: 16px;
     padding: 0 16px;
     width: 100%;
-
+    @media (max-width: 992px){
+      margin-bottom: 10px;
+    }
+    @media (max-width: 580px){
+      height: 25px;
+    }
     &::-webkit-calendar-picker-indicator {
       display: none;
     }
@@ -692,6 +712,9 @@ justify-content: center;
     justify-content: space-between;
     width: 100%;
     margin-bottom: 25px;
+    @media (max-width: 992px){
+      margin-bottom: 0;
+    }
   }
 
   &__form-close-file {
@@ -725,7 +748,9 @@ justify-content: center;
     position: relative;
     width: 187px;
     margin-bottom: 15px;
-
+    @media (max-width: 992px){
+      margin-bottom: 10px;
+    }
     &::before {
       content: url("../image/icon_photo.png");
       left: 15px;
@@ -754,6 +779,12 @@ justify-content: center;
     padding: 10px 0 0 10px;
     resize: none;
     width: 100%;
+    @media (max-width: 992px){
+      margin-bottom: 10px;
+    }
+    @media (max-width: 580px){
+      height: 50px;
+    }
   }
 
   &__form-btn {
