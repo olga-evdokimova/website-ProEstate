@@ -817,7 +817,7 @@ input::-webkit-search-results-decoration {
   left: 0;
   padding: 30px 34px 34px;
   position: relative;
-  top: -29px;
+  top: 0px;
   width: 416px;
   z-index: 5;
 }
