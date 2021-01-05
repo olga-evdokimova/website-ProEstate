@@ -439,6 +439,7 @@ input::-webkit-search-results-decoration {
     width: 100%;
 
     & img {
+      display: block;
       height: auto;
       width: 100%;
     }
