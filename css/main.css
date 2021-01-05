@@ -527,6 +527,9 @@ input::-webkit-search-results-decoration {
   border-radius: 5px 5px 0 0;
   max-height: 184px;
   width: 100%;
+  border-radius: 5px 5px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card__img img {
@@ -651,10 +654,13 @@ input::-webkit-search-results-decoration {
 }
 
 .partner__img {
-  background-position: center;
+  background-position: center center;
   background-size: cover;
-  height: 210.3px;
+  height: 207.3px;
   width: 100%;
+  border-radius: 5px 5px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .partner__img--one {

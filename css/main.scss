@@ -250,7 +250,7 @@ input::-webkit-search-results-decoration {
       width: 200px;
       height: 300px;
       background-color: $blue-color;
-      border-bottom-left-radius:100%;
+      border-bottom-left-radius: 100%;
       box-shadow: 0px 0px 40px #019af0;
       z-index: 20;
       display: block;
@@ -401,7 +401,7 @@ input::-webkit-search-results-decoration {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  @media (max-width: 992px){
+  @media (max-width: 992px) {
     justify-content: space-around;
   }
 }
@@ -420,15 +420,15 @@ input::-webkit-search-results-decoration {
   }
   &:nth-child(3n + 3) {
     margin-right: 0;
-    @media (max-width: 992px){
+    @media (max-width: 992px) {
       margin-right: 10px;
     }
   }
 
   &:nth-last-child(-n + 3) {
     margin-bottom: 0;
-    @media (max-width: 992px){
-    margin-bottom: 10px;
+    @media (max-width: 992px) {
+      margin-bottom: 10px;
     }
   }
 
@@ -437,7 +437,8 @@ input::-webkit-search-results-decoration {
     border-radius: 5px 5px 0 0;
     max-height: 184px;
     width: 100%;
-
+    border-radius: 5px 5px 0 0;
+    object-fit: cover;
     & img {
       display: block;
       height: auto;
@@ -470,8 +471,8 @@ input::-webkit-search-results-decoration {
     margin: 0;
     padding: 0 28px 26px;
     width: 100%;
-    @media (max-width: 400px){
-padding: 0 18px 16px;
+    @media (max-width: 400px) {
+      padding: 0 18px 16px;
     }
   }
 
@@ -518,29 +519,29 @@ padding: 0 18px 16px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    @media (max-width: 992px){
-      justify-content:center;
+    @media (max-width: 992px) {
+      justify-content: center;
     }
-
   }
 
   &__card {
     width: calc(100% / 4 - 23px);
     max-width: 230px;
-    @media (max-width: 992px){
+    @media (max-width: 992px) {
       margin: 0 50px 10px;
-      margin-left:calc(10px + (50 - 10) * ((100vw - 320px) / (992 - 320)));
-      margin-right:calc(10px + (50 - 10) * ((100vw - 320px) / (992 - 320)));
+      margin-left: calc(10px + (50 - 10) * ((100vw - 320px) / (992 - 320)));
+      margin-right: calc(10px + (50 - 10) * ((100vw - 320px) / (992 - 320)));
       flex: 1 1 230px;
     }
   }
 
   &__img {
-    background-position: center;
+    background-position:center center;
     background-size: cover;
-    height: 210.3px;
+    height: 207.3px;
     width: 100%;
-
+    border-radius: 5px 5px 0 0;
+    object-fit: cover;
     &--one {
       background-image: url("../image/service_partner_1.jpg");
     }
@@ -573,13 +574,11 @@ padding: 0 18px 16px;
 //Why
 .why {
   margin-bottom: 86px;
-  @media (max-width: 992px){
-   margin-bottom: 60px;
-    
+  @media (max-width: 992px) {
+    margin-bottom: 60px;
   }
-  @media (max-width: 580px){
-   margin-bottom: 30px;
-    
+  @media (max-width: 580px) {
+    margin-bottom: 30px;
   }
 
   &__title {
@@ -590,9 +589,9 @@ padding: 0 18px 16px;
     display: flex;
     justify-content: space-between;
 
-    @media (max-width: 992px){
-     flex-wrap: wrap;
-justify-content: center;
+    @media (max-width: 992px) {
+      flex-wrap: wrap;
+      justify-content: center;
     }
   }
 
@@ -603,18 +602,15 @@ justify-content: center;
     margin-right: 10px;
     text-align: center;
     width: 100%;
-    
-    @media (max-width: 992px){
+
+    @media (max-width: 992px) {
       max-width: 135px;
       margin: 10px 20px;
-      
     }
     &:last-child {
       margin-right: 0;
-      @media (max-width: 992px){
-        
+      @media (max-width: 992px) {
         margin: 10px 20px;
-        
       }
     }
   }
@@ -640,9 +636,8 @@ justify-content: center;
   max-height: 614px;
   margin-bottom: 86px;
   position: relative;
-  @media (max-width: 580px){
-  background: transparent;
- 
+  @media (max-width: 580px) {
+    background: transparent;
   }
   &__title {
     display: none;
@@ -662,18 +657,16 @@ justify-content: center;
     top: -29px;
     width: 416px;
     z-index: 5;
-    @media (max-width: 992px){
-     top: 0;
-     width: calc(300px + (416 - 300) * ((100vw - 320px) / (992 - 320)));
+    @media (max-width: 992px) {
+      top: 0;
+      width: calc(300px + (416 - 300) * ((100vw - 320px) / (992 - 320)));
       padding: calc(12px + (34 - 12) * ((100vw - 320px) / (992 - 320)));
-     
     }
-    @media (max-width: 580px){
+    @media (max-width: 580px) {
       width: 100%;
       // left: 50%;
       // transform: translateX(-50%);
     }
-
   }
 
   &__form-title {
@@ -703,10 +696,10 @@ justify-content: center;
     margin-bottom: 16px;
     padding: 0 16px;
     width: 100%;
-    @media (max-width: 992px){
+    @media (max-width: 992px) {
       margin-bottom: 10px;
     }
-    @media (max-width: 580px){
+    @media (max-width: 580px) {
       height: 25px;
     }
     &::-webkit-calendar-picker-indicator {
@@ -726,7 +719,7 @@ justify-content: center;
     justify-content: space-between;
     width: 100%;
     margin-bottom: 25px;
-    @media (max-width: 992px){
+    @media (max-width: 992px) {
       margin-bottom: 0;
     }
   }
@@ -762,7 +755,7 @@ justify-content: center;
     position: relative;
     width: 187px;
     margin-bottom: 15px;
-    @media (max-width: 992px){
+    @media (max-width: 992px) {
       margin-bottom: 10px;
     }
     &::before {
@@ -793,10 +786,10 @@ justify-content: center;
     padding: 10px 0 0 10px;
     resize: none;
     width: 100%;
-    @media (max-width: 992px){
+    @media (max-width: 992px) {
       margin-bottom: 10px;
     }
-    @media (max-width: 580px){
+    @media (max-width: 580px) {
       height: 50px;
     }
   }
