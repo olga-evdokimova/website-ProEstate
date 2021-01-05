@@ -1056,9 +1056,9 @@ input::-webkit-search-results-decoration {
   width: 100%;
 }
 
-@media (max-width: 580px) {
+@media (max-width: 767px) {
   .contact > iframe {
-    height: 50%;
+    height: 300px;
     padding: 0 15px;
   }
 }
@@ -1084,14 +1084,14 @@ input::-webkit-search-results-decoration {
 
 @media (max-width: 992px) {
   .contact__form {
-    right: 15px;
+    right: 60px;
     bottom: 4px;
     width: calc(300px + (416 - 300) * ((100vw - 320px) / (992 - 320)));
     padding: calc(12px + (38 - 12) * ((100vw - 320px) / (992 - 320)));
   }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 767px) {
   .contact__form {
     position: initial;
     width: calc(100% - 30px);
