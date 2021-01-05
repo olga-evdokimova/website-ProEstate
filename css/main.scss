@@ -64,7 +64,7 @@ body {
   background: url("../image/icon_arrow-up.png") no-repeat;
   background-size: cover;
   border: none;
-  bottom: 80px;
+  bottom: 150px;
   display: none;
   height: 51px;
   overflow: hidden;
@@ -854,11 +854,10 @@ input::-webkit-search-results-decoration {
     }
     @media (max-width: 580px) {
       position: initial;
-      width:calc(100% - 30px);
+      width: calc(100% - 30px);
       right: 0;
       left: 0;
       margin: 0 15px;
- 
     }
   }
 
@@ -998,14 +997,29 @@ input::-webkit-search-results-decoration {
   height: 150px;
   width: 100%;
   padding: 37px 0 71px;
-
+  @media (max-width: 767px) {
+    padding-top: 20px;
+  }
   &__inner {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 767px) {
+      // position: relative;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &__location {
     padding-left: 25px;
+    @media (max-width: 767px) {
+      padding-top: 10px;
+      flex: 1 1 60%;
+    }
+    @media (max-width: 400px) {
+     display: none;
+    }
   }
 
   &__phone {
@@ -1019,6 +1033,12 @@ input::-webkit-search-results-decoration {
       line-height: 100%;
       letter-spacing: 0.05em;
       color: $blue-color;
+      @media (max-width: 540px) {
+        font-size: 18px;
+      }
+      @media (max-width: 420px) {
+        // font-size: 0;
+      }
     }
 
     &:before {
@@ -1036,6 +1056,13 @@ input::-webkit-search-results-decoration {
     line-height: 110%;
     color: $blue-color;
     position: relative;
+    @media (max-width: 540px) {
+      font-size: 14px;
+      padding-top: 4px;
+    }
+    @media (max-width: 420px) {
+      // font-size: 0;
+    }
 
     &:before {
       content: url("../image/icon_location_big.png");
@@ -1051,11 +1078,26 @@ input::-webkit-search-results-decoration {
     margin: 0;
     padding: 0;
     list-style: none;
+    @media (max-width: 767px) {
+      // display: flex;
+      // justify-content: space-between;
+      // position: absolute;
+      // top: -25px;
+      order: 2;
+      margin-top: 10px;
+      display: flex;
+    }
   }
-
+  &__menu-item {
+    @media (max-width: 767px) {
+      // margin-left: 225px;
+    }
+  }
   &__item {
     margin-bottom: 8px;
-
+    @media (max-width: 767px) {
+      margin-right: 10px;
+    }
     &:last-child {
       margin-bottom: 0;
     }
@@ -1065,12 +1107,27 @@ input::-webkit-search-results-decoration {
     text-decoration: none;
     color: $main-color;
   }
-
+  &__logo {
+    // width: 148px;
+    // height: 26px;
+    @media (max-width: 767px) {
+      flex: 1 1 40%;
+      text-align: end;
+    }
+    & img {
+      max-width: 100%;
+      height: auto;
+      @media (max-width: 540px) {
+        width: 148px;
+      }
+    }
+  }
   .copyright {
     font-size: 12px;
     line-height: 110%;
     margin: 14px 0 0;
     text-align: right;
+    white-space: nowrap;
   }
 }
 
