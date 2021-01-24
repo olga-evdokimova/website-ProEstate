@@ -29,7 +29,6 @@ body {
   @media (max-width: 1200px) {
     max-width: 980px;
   }
-  
 }
 
 .main-title {
@@ -355,7 +354,6 @@ input::-webkit-search-results-decoration {
     @media (max-width: 767px) {
       margin-right: 50px;
     }
-    
   }
 
   &__lang-link {
@@ -437,12 +435,13 @@ input::-webkit-search-results-decoration {
   }
 
   &__img {
-    background: url("https://via.placeholder.com/326x184");
+    background: url('https://via.placeholder.com/326x184');
     border-radius: 5px 5px 0 0;
-    max-height: 184px;
-    width: 100%;
-    border-radius: 5px 5px 0 0;
+    min-height: 179px;
+    max-width: 100%;
     object-fit: cover;
+    overflow: hidden;
+
     & img {
       display: block;
       height: auto;
@@ -572,6 +571,7 @@ input::-webkit-search-results-decoration {
     height: 73px;
     justify-content: center;
     text-align: center;
+    
   }
 }
 
@@ -588,7 +588,7 @@ input::-webkit-search-results-decoration {
   &__title {
     padding-bottom: 24px;
     @media (max-width: 580px) {
-     padding-bottom: 0;
+      padding-bottom: 0;
     }
   }
 
@@ -1023,7 +1023,7 @@ input::-webkit-search-results-decoration {
       flex: 1 1 60%;
     }
     @media (max-width: 400px) {
-     display: none;
+      display: none;
     }
   }
 
@@ -1041,7 +1041,6 @@ input::-webkit-search-results-decoration {
       @media (max-width: 540px) {
         font-size: 18px;
       }
-      
     }
 
     &:before {
@@ -1063,7 +1062,6 @@ input::-webkit-search-results-decoration {
       font-size: 14px;
       padding-top: 4px;
     }
-    
 
     &:before {
       content: url("../image/icon_location_big.png");
@@ -1085,7 +1083,7 @@ input::-webkit-search-results-decoration {
       display: flex;
     }
   }
-  
+
   &__item {
     margin-bottom: 8px;
     @media (max-width: 767px) {

@@ -539,11 +539,11 @@ input::-webkit-search-results-decoration {
 .card__img {
   background: url("https://via.placeholder.com/326x184");
   border-radius: 5px 5px 0 0;
-  max-height: 184px;
-  width: 100%;
-  border-radius: 5px 5px 0 0;
+  min-height: 179px;
+  max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  overflow: hidden;
 }
 
 .card__img img {
