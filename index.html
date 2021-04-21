@@ -17,13 +17,13 @@
     <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/nullstyle.css" />
     <link rel="stylesheet" href="./css/magnific-popup.css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <meta name="yandex-verification" content="c1d39c3206811524" />
     <meta name="google-site-verification" content="df72ed56570596ee">
-    <title>Pro Estate adaptive</title>
+    <title>Pro Estate</title>
     <script type="text/javascript" async=""
         src="https://www.gstatic.com/recaptcha/releases/vJuUWXolyYJx1oqUVmpPuryQ/recaptcha__en.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
@@ -68,7 +68,7 @@
         <main>
             <section class="services" id="ourServices">
                 <div class="container">
-                    <h2 class="main-title services__title">Наши Услуги</h2>
+                    <h2 class="main-title">Наши Услуги</h2>
                     <p class="services__subtitle">Все услуги мы оказываем под ключ. <br>Что именно мы предлагаем своим
                         клиентам
                         и с чем можем помочь :</p>
@@ -228,7 +228,7 @@
             </section>
             <section class="partner" id="partner">
                 <div class="container">
-                    <h2 class="main-title partner__title">Партнерские услуги</h2>
+                    <h2 class="main-title">Партнерские услуги</h2>
                     <div class="partner__inner">
                         <div class="partner__card">
                             <div class="partner__img partner__img--one"></div>
@@ -251,7 +251,7 @@
             </section>
             <section class="why" id="why">
                 <div class="container">
-                    <h2 class="main-title why__title">Почему Мы :</h2>
+                    <h2 class="main-title">Почему Мы :</h2>
 
                     <div class="why__inner">
                         <div class="why__item">
@@ -286,7 +286,8 @@
                 </div>
             </section>
             <section class="order" id="order">
-                <div class="container">
+                <h2 class="main-title">Оставить заявку</h2>
+                <div class="order__inner">
                     <form action="mail.php" method="post" class="order__form" enctype="multipart/form-data">
                         <div class="order__form-title">Оставьте вашу заявку</div>
                         <p class="order__form-subtitle">и наш менеджер свяжется с вами</p>
@@ -320,37 +321,35 @@
                         <div class="form__result"></div>
 
                     </form>
-
                 </div>
             </section>
             <section class="contact" id="contact">
-                <h2 class="main-title contact__title">Контакты</h2>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.3098872399296!2d37.64115351608925!3d55.77048959809493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a64dcca81df%3A0x3e15da255fc8e37!2z0KHQsNC00L7QstCw0Y8t0KHQv9Cw0YHRgdC60LDRjyDRg9C7Liwg0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1619013509546!5m2!1sru!2sru"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                <form action="mail.php" method="post" class="contact__form">
-                    <div class="contact__form-header">
-                        <div class="contact__form-logo">
+                <h2 class="main-title">Контакты</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.3098872399296!2d37.64115351608925!3d55.77048959809493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a64dcca81df%3A0x3e15da255fc8e37!2z0KHQsNC00L7QstCw0Y8t0KHQv9Cw0YHRgdC60LDRjyDRg9C7Liwg0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1619013509546!5m2!1sru!2sru"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                <form class="contact-form" action="mail.php" method="post">
+                    <div class="contact-form__header">
+                        <div class="contact-form__logo">
                             <img src="./image/logo_footer.png" alt="logo">
                         </div>
-                        <div class="contact__form-content">
-                            <p class="contact__form-loc">Москва</p>
-                            <p class="contact__form-phone"><a href="tel:+7(888)8888888">+7(888)888 88 88</a></p>
-                            <p class="contact__form-web"><a href="mailto:info@proestate.ru">info@proestate.ru</a>
+                        <div class="contact-form__content">
+                            <p class="contact-form__loc">Москва</p>
+                            <p class="contact-form__phone"><a href="tel:+7(888)8888888">+7(888)888 88 88</a></p>
+                            <p class="contact-form__web"><a href="mailto:info@proestate.ru">info@proestate.ru</a>
                             </p>
                         </div>
                     </div>
                     <hr>
-                    <div class="contact__form-title">Напишите нам</div>
+                    <div class="contact-form__title">Напишите нам</div>
 
-                    <label class="contact__form-label" for="e-mail">Ваш e-mail</label>
-                    <input class="contact__form-input" type="text" id="e-mail" name="email" required>
+                    <label class="contact-form__label" for="e-mail">Ваш e-mail</label>
+                    <input class="contact-form__input" type="text" id="e-mail" name="email" required>
 
-                    <label class="contact__form-label" for="messages">Сообщение</label>
-                    <textarea class="contact__form-textarea" name="text" id="messages" cols="30" rows="10"
+                    <label class="contact-form__label" for="messages">Сообщение</label>
+                    <textarea class="contact-form__textarea" name="text" id="messages" cols="30" rows="10"
                         required></textarea>
-                    <div class="form__error-contact"></div>
-
                     <input class="form__btn" type="submit" name="submit" value="Отправить">
                     <div class="form__result-contact"></div>
 

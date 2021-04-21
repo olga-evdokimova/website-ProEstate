@@ -31,12 +31,13 @@ body {
 
 .main-title {
   font-weight: 900;
-  font-size: 18px;
+  font-size: 30px;
   line-height: 22px;
   text-align: center;
   text-transform: uppercase;
-
   color: #333;
+  padding-bottom: 50px;
+  padding-top: 100px;
 }
 
 .btn {
@@ -92,51 +93,46 @@ body {
   width: 100%;
   cursor: pointer;
   transition: color 0.2s ease-in;
-  &:hover{
+  &:hover {
     color: $hover;
     transition: color 0.2s ease-in;
   }
 }
 
-.form__result,
-.form__result-contact {
-  display: none;
-  text-align: center;
-  margin: 15px 0;
-}
+// .form__result,
+// .form__result-contact {
+//   display: none;
+//   text-align: center;
+//   margin: 15px 0;
+// }
 
-.form__error,
-.form__error-contact {
-  display: none;
-  text-align: center;
-  margin-bottom: 15px;
-}
+// .form__error,
+// .form__error-contact {
+//   display: none;
+//   text-align: center;
+//   margin-bottom: 15px;
+// }
 
-.captcha {
-  align-self: flex-start;
-  height: 67px;
-  margin-bottom: 18px;
-  width: 270px;
-}
 
-input[type="text"]::-ms-clear {
-  display: none;
-  width: 0;
-  height: 0;
-}
 
-input[type="text"]::-ms-reveal {
-  display: none;
-  width: 0;
-  height: 0;
-}
+// input[type="text"]::-ms-clear {
+//   display: none;
+//   width: 0;
+//   height: 0;
+// }
 
-input::-webkit-search-decoration,
-input::-webkit-search-cancel-button,
-input::-webkit-search-results-button,
-input::-webkit-search-results-decoration {
-  display: none;
-}
+// input[type="text"]::-ms-reveal {
+//   display: none;
+//   width: 0;
+//   height: 0;
+// }
+
+// input::-webkit-search-decoration,
+// input::-webkit-search-cancel-button,
+// input::-webkit-search-results-button,
+// input::-webkit-search-results-decoration {
+//   display: none;
+// }
 
 //Header
 .header {
@@ -144,7 +140,6 @@ input::-webkit-search-results-decoration {
   background-size: cover;
   height: 500px;
   width: 100%;
-  margin-bottom: 75px;
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.2);
 
   &__top {
@@ -318,12 +313,6 @@ input::-webkit-search-results-decoration {
 }
 // Services
 .services {
-  margin-bottom: 50px;
-
-  &__title {
-    margin-bottom: 10px;
-  }
-
   &__subtitle {
     color: $main-color;
     font-size: 14px;
@@ -448,12 +437,6 @@ input::-webkit-search-results-decoration {
 
 //Partner
 .partner {
-  margin-bottom: 50px;
-
-  &__title {
-    margin-bottom: 24px;
-  }
-
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -518,21 +501,6 @@ input::-webkit-search-results-decoration {
 
 //Why
 .why {
-  margin-bottom: 86px;
-  @media (max-width: 992px) {
-    margin-bottom: 60px;
-  }
-  @media (max-width: 580px) {
-    margin-bottom: 30px;
-  }
-
-  &__title {
-    padding-bottom: 24px;
-    @media (max-width: 580px) {
-      padding-bottom: 0;
-    }
-  }
-
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -576,28 +544,27 @@ input::-webkit-search-results-decoration {
 
 //Order
 .order {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: url("../image/contact_bg.jpg") center;
-  background-size: cover;
-  max-height: 580px;
-  margin-bottom: 86px;
-  position: relative;
-  @media (max-width: 580px) {
-    background: transparent;
-    margin-bottom: 50px;
+  &__inner {
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url("../image/contact_bg.jpg") center;
+    background-size: cover;
+    min-height: 574px;
   }
-  
-
   &__form {
+    height: 574px;
+    position: absolute;
+    top: 0;
+    left: 154px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: $card-bg;
     border-radius: 5px;
-   box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.2);
-    padding: 35px ;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.2);
+    padding: 35px;
     width: 420px;
     @media (max-width: 992px) {
       width: calc(300px + (420 - 300) * ((100vw - 320px) / (992 - 320)));
@@ -681,17 +648,17 @@ input::-webkit-search-results-decoration {
   }
 
   &__form-file-btn {
-     display: flex;
+    display: flex;
     align-items: center;
     background-color: $card-bg;
     border: 1px solid #c4c4c4;
     border-radius: 5px;
-   height: 44px;
+    height: 44px;
     outline: none;
     position: relative;
-    width:100% ;
-    margin-bottom: 35px;
+    width: 100%;
     padding-left: 40px;
+    margin-bottom: 10px;
     &::before {
       content: url("../image/icon_photo.png");
       left: 10px;
@@ -738,62 +705,44 @@ input::-webkit-search-results-decoration {
 
 //Contact
 .contact {
-  margin-bottom: 50px;
   position: relative;
-  &__form-header {
-    @media (max-width: 580px) {
-      display: flex;
-      justify-content: space-between;
-    }
-    @media (max-width: 420px) {
-      display: block;
-    }
-  }
-  &__title {
-    margin-top: 0;
-    margin-bottom: 62px;
-    @media (max-width: 580px) {
-      margin-bottom: 25px;
-    }
-  }
-
+  margin-bottom: 100px;
   & > iframe {
     border: 0;
-    height: 600px;
+    height: 572px;
     width: 100%;
     @media (max-width: 767px) {
       height: 300px;
       padding: 0 15px;
     }
   }
-
-  &__form {
-    position: absolute;
+}
+.contact-form {
+  position: absolute;
+  bottom: 4px;
+  right: 154px;
+  display: flex;
+  flex-direction: column;
+  background-color: $card-bg;
+  width: 420px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.2);
+  padding: 35px;
+  @media (max-width: 992px) {
+    right: 60px;
     bottom: 4px;
-    right: 154px;
-    display: flex;
-    flex-direction: column;
-    background-color: $card-bg;
-    width: 420px;
-    border-radius: 5px;
-    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.2);
-    padding: 35px;
-    @media (max-width: 992px) {
-      right: 60px;
-      bottom: 4px;
-      width: calc(300px + (420 - 300) * ((100vw - 320px) / (992 - 320)));
-      padding: calc(12px + (35 - 12) * ((100vw - 320px) / (992 - 320)));
-    }
-    @media (max-width: 767px) {
-      position: initial;
-      width: calc(100% - 30px);
-      right: 0;
-      left: 0;
-      margin: 0 15px;
-    }
+    width: calc(300px + (420 - 300) * ((100vw - 320px) / (992 - 320)));
+    padding: calc(12px + (35 - 12) * ((100vw - 320px) / (992 - 320)));
+  }
+  @media (max-width: 767px) {
+    position: initial;
+    width: calc(100% - 30px);
+    right: 0;
+    left: 0;
+    margin: 0 15px;
   }
 
-  &__form-logo {
+  &__logo {
     width: 148px;
     height: 26px;
     align-self: flex-start;
@@ -807,7 +756,7 @@ input::-webkit-search-results-decoration {
     }
   }
 
-  &__form-content {
+  &__content {
     display: flex;
     flex-direction: column;
 
@@ -837,7 +786,7 @@ input::-webkit-search-results-decoration {
     }
   }
 
-  &__form-loc {
+  &__loc {
     &:before {
       content: url("../image/icon_location.png");
       position: absolute;
@@ -846,7 +795,7 @@ input::-webkit-search-results-decoration {
     }
   }
 
-  &__form-phone {
+  &__phone {
     &:before {
       content: url("../image/icon_phone_blue.png");
       position: absolute;
@@ -855,7 +804,7 @@ input::-webkit-search-results-decoration {
     }
   }
 
-  &__form-web {
+  &__web {
     &:before {
       content: url("../image/icon_mail.png");
       position: absolute;
@@ -864,15 +813,7 @@ input::-webkit-search-results-decoration {
     }
   }
 
-  hr {
-    margin: 0 0 28px;
-    width: 100%;
-    @media (max-width: 767px) {
-      margin-bottom: 10px;
-    }
-  }
-
-  &__form-title {
+  &__title {
     color: $popup-main-color;
     font-size: 18px;
     font-weight: 900;
@@ -881,12 +822,12 @@ input::-webkit-search-results-decoration {
     text-transform: uppercase;
   }
 
-  &__form-label {
+  &__label {
     color: $popup-main-color;
     margin-bottom: 4px;
   }
 
-  &__form-input {
+  &__input {
     background: $white-color;
     border: 1px solid #c4c4c4;
     border-radius: 5px;
@@ -902,7 +843,7 @@ input::-webkit-search-results-decoration {
     }
   }
 
-  &__form-textarea {
+  &__textarea {
     background: $white-color;
     border: 1px solid #c4c4c4;
     border-radius: 5px;
@@ -915,10 +856,7 @@ input::-webkit-search-results-decoration {
       height: 50px;
     }
   }
-
-  
 }
-
 //Footer
 .footer {
   background: url("../image/footer_bg.png") center;
