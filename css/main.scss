@@ -3,7 +3,7 @@ $blue-color: #019af0;
 $white-color: #fff;
 $popup-main-color: #000;
 $card-bg: #f2f2f2;
-
+$hover: #015c91;
 body {
   font-family: "Lato", sans-serif;
   font-size: 14px;
@@ -91,6 +91,11 @@ body {
   text-align: center;
   width: 100%;
   cursor: pointer;
+  transition: color 0.2s ease-in;
+  &:hover{
+    color: $hover;
+    transition: color 0.2s ease-in;
+  }
 }
 
 .form__result,
@@ -141,8 +146,8 @@ input::-webkit-search-results-decoration {
   width: 100%;
   margin-bottom: 75px;
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.2);
-  
-&__top {
+
+  &__top {
     height: 60px;
     align-items: center;
     display: flex;
@@ -219,7 +224,7 @@ input::-webkit-search-results-decoration {
     }
   }
   &__content {
-   padding-top: 60px;
+    padding-top: 60px;
     &-title {
       color: $main-color;
       font-size: 40px;
@@ -245,7 +250,7 @@ input::-webkit-search-results-decoration {
       span {
         transition: color 0.2s ease-in;
         &:hover {
-          color: #005f95;
+          color: $hover;
           transition: color 0.2s ease-in;
         }
       }
@@ -301,11 +306,8 @@ input::-webkit-search-results-decoration {
     transition: color 0.2s ease-in;
 
     &:hover {
-      color: $blue-color;
+      color: #019af0;
       transition: color 0.2s ease-in;
-      @media (max-width: 1200px) {
-        color: $white-color;
-      }
     }
   }
 }
@@ -508,7 +510,7 @@ input::-webkit-search-results-decoration {
     text-align: center;
     transition: color 0.2s ease-in;
     &:hover {
-      color: #005f95;
+      color: $hover;
       transition: color 0.2s ease-in;
     }
   }
@@ -579,35 +581,27 @@ input::-webkit-search-results-decoration {
   appearance: none;
   background: url("../image/contact_bg.jpg") center;
   background-size: cover;
-  max-height: 614px;
+  max-height: 580px;
   margin-bottom: 86px;
   position: relative;
   @media (max-width: 580px) {
     background: transparent;
     margin-bottom: 50px;
   }
-  &__title {
-    display: none;
-  }
+  
 
   &__form {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     background-color: $card-bg;
     border-radius: 5px;
-    box-shadow: 5px 3px 8px rgba(0, 0, 0, 0.25);
-    display: flex;
-    flex-direction: column;
-    //max-height: 700px; //FIXME height:686px
-    left: 0;
-    padding: 30px 34px 34px;
-    position: relative;
-    top: 0px;
-    width: 416px;
-    z-index: 5;
+   box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.2);
+    padding: 35px ;
+    width: 420px;
     @media (max-width: 992px) {
-      top: 0;
-      width: calc(300px + (416 - 300) * ((100vw - 320px) / (992 - 320)));
-      padding: calc(12px + (34 - 12) * ((100vw - 320px) / (992 - 320)));
+      width: calc(300px + (420 - 300) * ((100vw - 320px) / (992 - 320)));
+      padding: calc(12px + (35 - 12) * ((100vw - 320px) / (992 - 320)));
     }
     @media (max-width: 580px) {
       width: 100%;
@@ -663,7 +657,6 @@ input::-webkit-search-results-decoration {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 25px;
     @media (max-width: 992px) {
       margin-bottom: 0;
     }
@@ -688,24 +681,20 @@ input::-webkit-search-results-decoration {
   }
 
   &__form-file-btn {
+     display: flex;
     align-items: center;
-    align-self: flex-start;
     background-color: $card-bg;
     border: 1px solid #c4c4c4;
     border-radius: 5px;
-    display: flex;
-    height: 44px;
-    justify-content: center;
+   height: 44px;
     outline: none;
     position: relative;
-    width: 187px;
-    margin-bottom: 15px;
-    @media (max-width: 992px) {
-      margin-bottom: 10px;
-    }
+    width:100% ;
+    margin-bottom: 35px;
+    padding-left: 40px;
     &::before {
       content: url("../image/icon_photo.png");
-      left: 15px;
+      left: 10px;
       position: absolute;
       top: 10px;
     }
@@ -740,7 +729,6 @@ input::-webkit-search-results-decoration {
   }
 
   &__form-btn {
-    margin-top: auto;
   }
 
   &__file {
@@ -771,7 +759,7 @@ input::-webkit-search-results-decoration {
 
   & > iframe {
     border: 0;
-    height: 645px;
+    height: 600px;
     width: 100%;
     @media (max-width: 767px) {
       height: 300px;
@@ -786,16 +774,15 @@ input::-webkit-search-results-decoration {
     display: flex;
     flex-direction: column;
     background-color: $card-bg;
-    //height: 682px;
-    width: 416px;
+    width: 420px;
     border-radius: 5px;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-    padding: 38px 33px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.2);
+    padding: 35px;
     @media (max-width: 992px) {
       right: 60px;
       bottom: 4px;
-      width: calc(300px + (416 - 300) * ((100vw - 320px) / (992 - 320)));
-      padding: calc(12px + (38 - 12) * ((100vw - 320px) / (992 - 320)));
+      width: calc(300px + (420 - 300) * ((100vw - 320px) / (992 - 320)));
+      padding: calc(12px + (35 - 12) * ((100vw - 320px) / (992 - 320)));
     }
     @media (max-width: 767px) {
       position: initial;
@@ -920,7 +907,7 @@ input::-webkit-search-results-decoration {
     border: 1px solid #c4c4c4;
     border-radius: 5px;
     height: 108px;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
     resize: none;
     padding-left: 10px;
     padding-top: 10px;
@@ -929,9 +916,7 @@ input::-webkit-search-results-decoration {
     }
   }
 
-  &__captcha {
-    margin-bottom: 30px;
-  }
+  
 }
 
 //Footer
@@ -1104,8 +1089,6 @@ input::-webkit-search-results-decoration {
     align-self: center;
     margin-bottom: 27px;
     width: 100%;
-    //height: 185px;
-    height: calc(60px + (185 - 60) * ((100vw - 320px) / (1200 - 320)));
   }
 
   &__title {
