@@ -34,7 +34,7 @@
         <header class="header">
             <div class="container">
                 <div class="header__top">
-                    <a href="http://proestate.lv/" class="logo">
+                    <a href="#" class="logo">
                         <img src="./image/logo_header.png" alt="logo">
                     </a>
                     <div class="header__top-burger">
@@ -325,12 +325,11 @@
             </section>
             <section class="contact" id="contact">
                 <h2 class="main-title">Контакты</h2>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.3098872399296!2d37.64115351608925!3d55.77048959809493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a64dcca81df%3A0x3e15da255fc8e37!2z0KHQsNC00L7QstCw0Y8t0KHQv9Cw0YHRgdC60LDRjyDRg9C7Liwg0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1619013509546!5m2!1sru!2sru"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-                <form class="contact-form" action="mail.php" method="post">
-                    <div class="contact-form__header">
+                <div class="contact__inner">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1122.154986633118!2d37.64224785835103!3d55.77048810390762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a64dcca81df%3A0x3e15da255fc8e37!2z0KHQsNC00L7QstCw0Y8t0KHQv9Cw0YHRgdC60LDRjyDRg9C7Liwg0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1619107118825!5m2!1sru!2sru"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <form class="contact-form" action="mail.php" method="post">
                         <div class="contact-form__logo">
                             <img src="./image/logo_footer.png" alt="logo">
                         </div>
@@ -340,20 +339,15 @@
                             <p class="contact-form__web"><a href="mailto:info@proestate.ru">info@proestate.ru</a>
                             </p>
                         </div>
-                    </div>
-                    <hr>
-                    <div class="contact-form__title">Напишите нам</div>
-
-                    <label class="contact-form__label" for="e-mail">Ваш e-mail</label>
-                    <input class="contact-form__input" type="text" id="e-mail" name="email" required>
-
-                    <label class="contact-form__label" for="messages">Сообщение</label>
-                    <textarea class="contact-form__textarea" name="text" id="messages" cols="30" rows="10"
-                        required></textarea>
-                    <input class="form__btn" type="submit" name="submit" value="Отправить">
-                    <div class="form__result-contact"></div>
-
-                </form>
+                        <div class="contact-form__title">Напишите нам</div>
+                        <label class="contact-form__label" for="e-mail">Ваш e-mail</label>
+                        <input class="contact-form__input" type="text" id="e-mail" name="email" required>
+                        <label class="contact-form__label" for="messages">Сообщение</label>
+                        <textarea class="contact-form__textarea" name="text" id="messages" cols="30" rows="10"
+                            required></textarea>
+                        <input class="form__btn" type="submit" name="submit" value="Отправить">
+                    </form>
+                </div>
             </section>
         </main>
         <footer class="footer">
