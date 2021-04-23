@@ -653,14 +653,7 @@ body {
     }
   }
 
-  #select {
-    background-image: url("../image/arrow_down.png");
-    background-position: 95%;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    position: relative;
-    z-index: 2;
-  }
+  
 
   &__form-textarea {
     background-color: $white-color;

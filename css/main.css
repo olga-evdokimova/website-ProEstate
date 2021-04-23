@@ -857,15 +857,6 @@ body {
   top: 10px;
 }
 
-.order #select {
-  background-image: url("../image/arrow_down.png");
-  background-position: 95%;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  position: relative;
-  z-index: 2;
-}
-
 .order__form-textarea {
   background-color: #fff;
   border: 0;
